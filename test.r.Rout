@@ -17,16 +17,17 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-> install.packages("xml2", repos = "http://cran.us.r-project.org")
+> install.packages("https://github.com/hadley/xml2/archive/master.tar.gz", type = "source", repos = NULL)
 Installing package into ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library’
 (as ‘lib’ is unspecified)
-trying URL 'http://cran.us.r-project.org/src/contrib/xml2_1.3.2.tar.gz'
-Content type 'application/x-gzip' length 271876 bytes (265 KB)
+trying URL 'https://github.com/hadley/xml2/archive/master.tar.gz'
+Content type 'application/x-gzip' length 3379967 bytes (3.2 MB)
 ==================================================
-downloaded 265 KB
+downloaded 3.2 MB
 
+Warning in untar2(tarfile, files, list, exdir, restore_times) :
+  skipping pax global extended headers
 * installing *source* package ‘xml2’ ...
-** package ‘xml2’ successfully unpacked and MD5 sums checked
 ** using staged installation
 Found pkg-config cflags and libs!
 Using PKG_CFLAGS=-I/usr/include/libxml2
@@ -43,16 +44,13 @@ R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
 --------------------------------------------------------------------
 ERROR: configuration failed for package ‘xml2’
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/xml2’
-
-The downloaded source packages are in
-	‘/tmp/RtmpxrlDsu/downloaded_packages’
 Warning message:
-In install.packages("xml2", repos = "http://cran.us.r-project.org") :
-  installation of package ‘xml2’ had non-zero exit status
+In install.packages("https://github.com/hadley/xml2/archive/master.tar.gz",  :
+  installation of package ‘/tmp/RtmpJPSUI1/downloaded_packages/master.tar.gz’ had non-zero exit status
 > install.packages("rvest", repos = "http://cran.us.r-project.org")
 Installing package into ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library’
 (as ‘lib’ is unspecified)
-also installing the dependencies ‘sys’, ‘askpass’, ‘stringi’, ‘cli’, ‘crayon’, ‘utf8’, ‘curl’, ‘jsonlite’, ‘mime’, ‘openssl’, ‘R6’, ‘glue’, ‘stringr’, ‘ellipsis’, ‘fansi’, ‘pillar’, ‘pkgconfig’, ‘vctrs’, ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, ‘selectr’, ‘tibble’, ‘xml2’
+also installing the dependencies ‘sys’, ‘askpass’, ‘stringi’, ‘cli’, ‘utf8’, ‘curl’, ‘jsonlite’, ‘mime’, ‘openssl’, ‘glue’, ‘stringr’, ‘ellipsis’, ‘fansi’, ‘pillar’, ‘vctrs’, ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, ‘selectr’, ‘tibble’, ‘xml2’
 
 trying URL 'http://cran.us.r-project.org/src/contrib/sys_3.4.tar.gz'
 Content type 'application/x-gzip' length 20138 bytes (19 KB)
@@ -73,11 +71,6 @@ trying URL 'http://cran.us.r-project.org/src/contrib/cli_3.0.1.tar.gz'
 Content type 'application/x-gzip' length 225589 bytes (220 KB)
 ==================================================
 downloaded 220 KB
-
-trying URL 'http://cran.us.r-project.org/src/contrib/crayon_1.4.1.tar.gz'
-Content type 'application/x-gzip' length 35769 bytes (34 KB)
-==================================================
-downloaded 34 KB
 
 trying URL 'http://cran.us.r-project.org/src/contrib/utf8_1.2.2.tar.gz'
 Content type 'application/x-gzip' length 240327 bytes (234 KB)
@@ -104,11 +97,6 @@ Content type 'application/x-gzip' length 1311351 bytes (1.3 MB)
 ==================================================
 downloaded 1.3 MB
 
-trying URL 'http://cran.us.r-project.org/src/contrib/R6_2.5.1.tar.gz'
-Content type 'application/x-gzip' length 63422 bytes (61 KB)
-==================================================
-downloaded 61 KB
-
 trying URL 'http://cran.us.r-project.org/src/contrib/glue_1.4.2.tar.gz'
 Content type 'application/x-gzip' length 99049 bytes (96 KB)
 ==================================================
@@ -133,11 +121,6 @@ trying URL 'http://cran.us.r-project.org/src/contrib/pillar_1.6.3.tar.gz'
 Content type 'application/x-gzip' length 1130236 bytes (1.1 MB)
 ==================================================
 downloaded 1.1 MB
-
-trying URL 'http://cran.us.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz'
-Content type 'application/x-gzip' length 6080 bytes
-==================================================
-downloaded 6080 bytes
 
 trying URL 'http://cran.us.r-project.org/src/contrib/vctrs_0.3.8.tar.gz'
 Content type 'application/x-gzip' length 782608 bytes (764 KB)
@@ -205,23 +188,11 @@ checking for cat... /usr/bin/cat
 checking for local ICUDT_DIR... icu69/data
 checking for gcc... gcc-5
 checking whether the C compiler works... no
-configure: error: in `/tmp/RtmpSEBBKS/R.INSTALL88f70732c37/stringi':
+configure: error: in `/tmp/RtmpeRWc4O/R.INSTALL3f514ec95fd2/stringi':
 configure: error: C compiler cannot create executables
 See `config.log' for more details
 ERROR: configuration failed for package ‘stringi’
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/stringi’
-* installing *source* package ‘crayon’ ...
-** package ‘crayon’ successfully unpacked and MD5 sums checked
-** using staged installation
-** R
-** byte-compile and prepare package for lazy loading
-** help
-*** installing help indices
-** building package indices
-** testing if installed package can be loaded from temporary location
-** testing if installed package can be loaded from final location
-** testing if installed package keeps a record of temporary installation path
-* DONE (crayon)
 * installing *source* package ‘utf8’ ...
 ** package ‘utf8’ successfully unpacked and MD5 sums checked
 ** using staged installation
@@ -267,19 +238,6 @@ gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/
 make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: init.o] Error 127
 ERROR: compilation failed for package ‘mime’
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/mime’
-* installing *source* package ‘R6’ ...
-** package ‘R6’ successfully unpacked and MD5 sums checked
-** using staged installation
-** R
-** byte-compile and prepare package for lazy loading
-** help
-*** installing help indices
-*** copying figures
-** building package indices
-** testing if installed package can be loaded from temporary location
-** testing if installed package can be loaded from final location
-** testing if installed package keeps a record of temporary installation path
-* DONE (R6)
 * installing *source* package ‘glue’ ...
 ** package ‘glue’ successfully unpacked and MD5 sums checked
 ** using staged installation
@@ -298,19 +256,6 @@ gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/
 make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: assumptions.o] Error 127
 ERROR: compilation failed for package ‘fansi’
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/fansi’
-* installing *source* package ‘pkgconfig’ ...
-** package ‘pkgconfig’ successfully unpacked and MD5 sums checked
-** using staged installation
-** R
-** inst
-** byte-compile and prepare package for lazy loading
-** help
-*** installing help indices
-** building package indices
-** testing if installed package can be loaded from temporary location
-** testing if installed package can be loaded from final location
-** testing if installed package keeps a record of temporary installation path
-* DONE (pkgconfig)
 * installing *source* package ‘magrittr’ ...
 ** package ‘magrittr’ successfully unpacked and MD5 sums checked
 ** using staged installation
@@ -373,7 +318,7 @@ ERROR: dependencies ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, �
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/rvest’
 
 The downloaded source packages are in
-	‘/tmp/RtmpxrlDsu/downloaded_packages’
+	‘/tmp/RtmpJPSUI1/downloaded_packages’
 There were 23 warnings (use warnings() to see them)
 > 
 > library(xml2)

@@ -1,4 +1,4 @@
-install.packages("xml2", repos = "http://cran.us.r-project.org")
+install.packages("https://github.com/hadley/xml2/archive/master.tar.gz", type = "source", repos = NULL)
 install.packages("rvest", repos = "http://cran.us.r-project.org")
 
 library(xml2)
