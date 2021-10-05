@@ -45,7 +45,7 @@ ERROR: configuration failed for package ‘xml2’
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/xml2’
 
 The downloaded source packages are in
-	‘/tmp/RtmpXCTAav/downloaded_packages’
+	‘/tmp/RtmpxrlDsu/downloaded_packages’
 Warning message:
 In install.packages("xml2", repos = "http://cran.us.r-project.org") :
   installation of package ‘xml2’ had non-zero exit status
@@ -205,7 +205,7 @@ checking for cat... /usr/bin/cat
 checking for local ICUDT_DIR... icu69/data
 checking for gcc... gcc-5
 checking whether the C compiler works... no
-configure: error: in `/tmp/RtmpH3yVIY/R.INSTALL890765a3c04/stringi':
+configure: error: in `/tmp/RtmpSEBBKS/R.INSTALL88f70732c37/stringi':
 configure: error: C compiler cannot create executables
 See `config.log' for more details
 ERROR: configuration failed for package ‘stringi’
@@ -373,7 +373,7 @@ ERROR: dependencies ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, �
 * removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/rvest’
 
 The downloaded source packages are in
-	‘/tmp/RtmpXCTAav/downloaded_packages’
+	‘/tmp/RtmpxrlDsu/downloaded_packages’
 There were 23 warnings (use warnings() to see them)
 > 
 > library(xml2)

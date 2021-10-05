@@ -6,8 +6,11 @@ vscode:
     - Ikuyadeu.r@1.2.1:z5vr1v1bfS++U/aHLSXQ6Q==
 
 tasks:
-  - name: Setup R libs and Run
+  - name: Setup R libs 
     init: |
-      sudo apt-get --assume-yes install libxml2-dev
+      sudo apt-get --assume-yes install libxml2-dev && gp sync-done xmlpkg
+
+  - name: Run
+    init: gp sync-await xmlpkg
     command: R CMD BATCH test.r && cat test.r.Rout
     
