@@ -8,6 +8,6 @@ vscode:
 tasks:
   - name: Setup R libs and Run
     init: |
-      sudo apt-get install libxml2-dev
+      sudo apt-get --assume-yes install libxml2-dev
     command: R CMD BATCH test.r && cat test.r.Rout
     
