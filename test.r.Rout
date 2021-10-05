@@ -17,9 +17,318 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+> install.packages("xml2", repos = "http://cran.us.r-project.org")
+Installing package into ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library’
+(as ‘lib’ is unspecified)
+trying URL 'http://cran.us.r-project.org/src/contrib/xml2_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 271876 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+* installing *source* package ‘xml2’ ...
+** package ‘xml2’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/usr/include/libxml2
+Using PKG_LIBS=-lxml2
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because libxml-2.0 was not found. Try installing:
+ * deb: libxml2-dev (Debian, Ubuntu, etc)
+ * rpm: libxml2-devel (Fedora, CentOS, RHEL)
+ * csw: libxml2_dev (Solaris)
+If libxml-2.0 is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a libxml-2.0.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘xml2’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/xml2’
+
+The downloaded source packages are in
+	‘/tmp/RtmppGhqJ7/downloaded_packages’
+Warning message:
+In install.packages("xml2", repos = "http://cran.us.r-project.org") :
+  installation of package ‘xml2’ had non-zero exit status
+> install.packages("rvest", repos = "http://cran.us.r-project.org")
+Installing package into ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘sys’, ‘askpass’, ‘stringi’, ‘cli’, ‘utf8’, ‘curl’, ‘jsonlite’, ‘mime’, ‘openssl’, ‘glue’, ‘stringr’, ‘ellipsis’, ‘fansi’, ‘pillar’, ‘vctrs’, ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, ‘selectr’, ‘tibble’, ‘xml2’
+
+trying URL 'http://cran.us.r-project.org/src/contrib/sys_3.4.tar.gz'
+Content type 'application/x-gzip' length 20138 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/askpass_1.1.tar.gz'
+Content type 'application/x-gzip' length 5730 bytes
+==================================================
+downloaded 5730 bytes
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringi_1.7.5.tar.gz'
+Content type 'application/x-gzip' length 7600378 bytes (7.2 MB)
+==================================================
+downloaded 7.2 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/cli_3.0.1.tar.gz'
+Content type 'application/x-gzip' length 225589 bytes (220 KB)
+==================================================
+downloaded 220 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/utf8_1.2.2.tar.gz'
+Content type 'application/x-gzip' length 240327 bytes (234 KB)
+==================================================
+downloaded 234 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/curl_4.3.2.tar.gz'
+Content type 'application/x-gzip' length 793345 bytes (774 KB)
+==================================================
+downloaded 774 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/jsonlite_1.7.2.tar.gz'
+Content type 'application/x-gzip' length 421716 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/mime_0.12.tar.gz'
+Content type 'application/x-gzip' length 12562 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/openssl_1.4.5.tar.gz'
+Content type 'application/x-gzip' length 1311351 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/glue_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 99049 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/stringr_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 135777 bytes (132 KB)
+==================================================
+downloaded 132 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/ellipsis_0.3.2.tar.gz'
+Content type 'application/x-gzip' length 8066 bytes
+==================================================
+downloaded 8066 bytes
+
+trying URL 'http://cran.us.r-project.org/src/contrib/fansi_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 301724 bytes (294 KB)
+==================================================
+downloaded 294 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/pillar_1.6.3.tar.gz'
+Content type 'application/x-gzip' length 1130236 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/vctrs_0.3.8.tar.gz'
+Content type 'application/x-gzip' length 782608 bytes (764 KB)
+==================================================
+downloaded 764 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/httr_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 159950 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/lifecycle_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 99716 bytes (97 KB)
+==================================================
+downloaded 97 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/magrittr_2.0.1.tar.gz'
+Content type 'application/x-gzip' length 265580 bytes (259 KB)
+==================================================
+downloaded 259 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rlang_0.4.11.tar.gz'
+Content type 'application/x-gzip' length 861727 bytes (841 KB)
+==================================================
+downloaded 841 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'application/x-gzip' length 41371 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/tibble_3.1.5.tar.gz'
+Content type 'application/x-gzip' length 739036 bytes (721 KB)
+==================================================
+downloaded 721 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/xml2_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 271876 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+trying URL 'http://cran.us.r-project.org/src/contrib/rvest_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 94307 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+* installing *source* package ‘sys’ ...
+** package ‘sys’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include   -fpic  -Wno-implicit-function-declaration  -c exec.c -o exec.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: exec.o] Error 127
+ERROR: compilation failed for package ‘sys’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/sys’
+* installing *source* package ‘stringi’ ...
+** package ‘stringi’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for R_HOME... /home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R
+checking for R... /home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/bin/R
+checking for endianness... little
+checking for R >= 3.1.0 for C++11 use... yes
+checking for R < 3.4.0 for CXX1X flag use... no
+checking for cat... /usr/bin/cat
+checking for local ICUDT_DIR... icu69/data
+checking for gcc... gcc-5
+checking whether the C compiler works... no
+configure: error: in `/tmp/Rtmpf0vbYv/R.INSTALL1f87670f73/stringi':
+configure: error: C compiler cannot create executables
+See `config.log' for more details
+ERROR: configuration failed for package ‘stringi’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/stringi’
+* installing *source* package ‘utf8’ ...
+** package ‘utf8’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include  -Iutf8lite/src -fpic  -Wno-implicit-function-declaration  -c as_utf8.c -o as_utf8.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: as_utf8.o] Error 127
+ERROR: compilation failed for package ‘utf8’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/utf8’
+* installing *source* package ‘curl’ ...
+** package ‘curl’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/usr/include/x86_64-linux-gnu
+Using PKG_LIBS=-lcurl
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because libcurl was not found. Try installing:
+ * deb: libcurl4-openssl-dev (Debian, Ubuntu, etc)
+ * rpm: libcurl-devel (Fedora, CentOS, RHEL)
+ * csw: libcurl_dev (Solaris)
+If libcurl is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a libcurl.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘curl’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/curl’
+* installing *source* package ‘jsonlite’ ...
+** package ‘jsonlite’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG -Iyajl/api  -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include  -fvisibility=hidden  -fpic  -Wno-implicit-function-declaration  -c base64.c -o base64.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: base64.o] Error 127
+ERROR: compilation failed for package ‘jsonlite’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/jsonlite’
+* installing *source* package ‘mime’ ...
+** package ‘mime’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include   -fpic  -Wno-implicit-function-declaration  -c init.c -o init.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: init.o] Error 127
+ERROR: compilation failed for package ‘mime’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/mime’
+* installing *source* package ‘glue’ ...
+** package ‘glue’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include   -fpic  -Wno-implicit-function-declaration  -c glue.c -o glue.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: glue.o] Error 127
+ERROR: compilation failed for package ‘glue’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/glue’
+* installing *source* package ‘fansi’ ...
+** package ‘fansi’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include   -fpic  -Wno-implicit-function-declaration  -c assumptions.c -o assumptions.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: assumptions.o] Error 127
+ERROR: compilation failed for package ‘fansi’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/fansi’
+* installing *source* package ‘magrittr’ ...
+** package ‘magrittr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG   -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include   -fpic  -Wno-implicit-function-declaration  -c pipe.c -o pipe.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: pipe.o] Error 127
+ERROR: compilation failed for package ‘magrittr’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/magrittr’
+* installing *source* package ‘rlang’ ...
+** package ‘rlang’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc-5 -I"/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/include" -DNDEBUG -I./lib/  -I/home/linuxbrew/.linuxbrew/opt/libtirpc/include/tirpc -I/home/linuxbrew/.linuxbrew/opt/gettext/include -I/home/linuxbrew/.linuxbrew/opt/readline/include -I/home/linuxbrew/.linuxbrew/opt/xz/include -I/home/linuxbrew/.linuxbrew/include  -fvisibility=hidden -fpic  -Wno-implicit-function-declaration  -c capture.c -o capture.o
+/bin/bash: gcc-5: command not found
+make: *** [/home/linuxbrew/.linuxbrew/Cellar/r/4.1.1/lib/R/etc/Makeconf:168: capture.o] Error 127
+ERROR: compilation failed for package ‘rlang’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/rlang’
+* installing *source* package ‘xml2’ ...
+** package ‘xml2’ successfully unpacked and MD5 sums checked
+** using staged installation
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/usr/include/libxml2
+Using PKG_LIBS=-lxml2
+------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because libxml-2.0 was not found. Try installing:
+ * deb: libxml2-dev (Debian, Ubuntu, etc)
+ * rpm: libxml2-devel (Fedora, CentOS, RHEL)
+ * csw: libxml2_dev (Solaris)
+If libxml-2.0 is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a libxml-2.0.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+ERROR: configuration failed for package ‘xml2’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/xml2’
+ERROR: dependency ‘sys’ is not available for package ‘askpass’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/askpass’
+ERROR: dependency ‘glue’ is not available for package ‘cli’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/cli’
+ERROR: dependencies ‘glue’, ‘magrittr’, ‘stringi’ are not available for package ‘stringr’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/stringr’
+ERROR: dependency ‘rlang’ is not available for package ‘ellipsis’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/ellipsis’
+ERROR: dependencies ‘glue’, ‘rlang’ are not available for package ‘lifecycle’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/lifecycle’
+ERROR: dependency ‘askpass’ is not available for package ‘openssl’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/openssl’
+ERROR: dependencies ‘ellipsis’, ‘glue’, ‘rlang’ are not available for package ‘vctrs’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/vctrs’
+ERROR: dependency ‘stringr’ is not available for package ‘selectr’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/selectr’
+ERROR: dependencies ‘cli’, ‘ellipsis’, ‘fansi’, ‘lifecycle’, ‘rlang’, ‘utf8’, ‘vctrs’ are not available for package ‘pillar’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/pillar’
+ERROR: dependencies ‘curl’, ‘jsonlite’, ‘mime’, ‘openssl’ are not available for package ‘httr’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/httr’
+ERROR: dependencies ‘ellipsis’, ‘fansi’, ‘lifecycle’, ‘magrittr’, ‘pillar’, ‘rlang’, ‘vctrs’ are not available for package ‘tibble’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/tibble’
+ERROR: dependencies ‘httr’, ‘lifecycle’, ‘magrittr’, ‘rlang’, ‘selectr’, ‘tibble’, ‘xml2’ are not available for package ‘rvest’
+* removing ‘/home/linuxbrew/.linuxbrew/lib/R/4.1/site-library/rvest’
+
+The downloaded source packages are in
+	‘/tmp/RtmppGhqJ7/downloaded_packages’
+There were 23 warnings (use warnings() to see them)
+> 
+> 
 > print("hello ") 
 [1] "hello "
 > 
+> 
+> 
 > proc.time()
    user  system elapsed 
-  0.148   0.066   0.167 
+ 12.583   3.947  44.336 
